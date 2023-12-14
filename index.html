@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flexbox Pricing Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+  <link id="favicon" rel="icon" href="./earth.png" type="image/x-icon">
+  <style>
+body {
+  font-family: 'Cardo', serif;
+      font-size: 25px;
+      font-weight: bolder;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; 
+      margin: 1; 
+      background: linear-gradient(to right,#4D2DB7, #EC53B0);
+    }
+    ul {
+      list-style: none;
+    }
+    li{
+      padding: 5px;
+    }
+    .pricing-container {
+      display: flex;
+    }
+    .pricing-plan {
+      border: 2px solid;
+      border-radius: 7px;
+      padding: 40px;
+      background: linear-gradient(to right,#FFA33C,#EC53B0);
+      margin: 30px;
+    }
+    .plan-button {
+      border-radius: 20px;
+      background: linear-gradient(to right,#FFA33C,#EC53B0);
+      padding: 10px;
+      font-weight: bold;
+    }
+    .plan-button:active {
+     background: linear-gradient(to left,#9D44C0,#E26EE5);
+    }
+    .plan-price {
+      font-size: 40px;
+    }
+    .plan-title {
+      text-decoration: underline;
+    }
+    .pricing-plan:hover {
+      background: linear-gradient(to left,#4D2DB7, #EC53B0);
+    }
+    .pricing-plan:active {
+      background: linear-gradient(to right,#4D2DB7, #EC53B0);
+    }
+    h1 {
+      flex-direction: row;
+      font-style: oblique;
+      font-weight:lighter;
+      font-size: 2.3em;
+    }
+    li {
+      display: flex;
+    }
+    button {
+      user-select: none;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1 style="margin-bottom: 10px;"> Our Special Offers:</h1>
+  <div class="pricing-container">
+    <div class="pricing-plan">
+      <div class="plan-title">Basic</div>
+      <span class="plan-price">$9.99/month</span>
+      <ul class="plan-features">
+        <li>✅ 10GB Storage</li>
+        <li>✅ 1 User</li>
+        <li>🚫 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Standard</div>
+      <span class="plan-price">$19.99/month</span>
+      <ul class="plan-features">
+        <li>✅ 50GB Storage</li>
+        <li>✅ 5 Users</li>
+        <li>✅ Phone &amp; Email Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Premium</div>
+      <span class="plan-price">$49.99/month</span>
+      <ul class="plan-features">
+        <li>✅ 100GB Storage</li>
+        <li>✅ 10 Users</li>
+        <li>✅ 24/7 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
